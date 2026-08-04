@@ -200,8 +200,7 @@ export class FakeMediaStreamTrack<
 	}
 
 	get onenabledchange():
-		| ((this: MediaStreamTrack, ev: FakeEvent) => void)
-		| null {
+		((this: MediaStreamTrack, ev: FakeEvent) => void) | null {
 		return this.#onenabledchange;
 	}
 
